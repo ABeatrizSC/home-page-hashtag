@@ -1,30 +1,29 @@
 /* Global */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-li,
-a {
+html {
+  font-size: 62.5%;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
   color: #404040;
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
-}
-
-p {
-  font-size: 16px;
 }
 
 strong {
@@ -32,7 +31,7 @@ strong {
 }
 
 .botao {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -43,25 +42,48 @@ strong {
 
 /* Cabeçalho */
 
-.item-lista-cabecalho a {
+header {
+  display: flex;
+  background-color: #40404034;
+  padding: 1.28rem 2.5rem;
+}
+
+.header__nav--list {
+  display: flex;
+  list-style: none;
+}
+
+.header__nav--item-list a {
   color: #112e61;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
 }
 
+.header__nav--item-list a:hover {
+  color: #f60;
+}
+
+.header__nav--item-list.sub {
+  overflow: hidden;
+}
+
+.header__nav--item-list.item-list--children::after {
+  content: "\2BC6";
+}
+
 /* Seção Hero */
 
 .hero-paragrafo {
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 /* Seção Conteúdos Gratuitos */
 /* 
 .gratuito-h2 {
   font-weight: 400;
-  font-size: 35px;
+  font-size: 3.5rem;
 } */
 
 .gratuito-realce {
@@ -70,19 +92,19 @@ strong {
 }
 
 .gratuito-h3 {
-  font-size: 23px;
+  font-size: 2.3rem;
   font-weight: 700;
 }
 
 .gratuito-link-lista {
-  font-size: 19px;
+  font-size: 1.9rem;
   text-decoration: none;
 }
 
 /* Seção Diferenciais */
 
 /* .diferenciais-h2 {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
 } */
 
@@ -91,17 +113,17 @@ strong {
 } */
 
 .diferenciais-p {
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 .diferenciais-h3 {
   color: #005e88;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
 }
 
 .diferenciais-h3-empresas {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
@@ -120,7 +142,7 @@ strong {
 /* Seção Blog */
 
 .blog-postadoem {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .blog-postadoem a {
@@ -130,13 +152,13 @@ strong {
 }
 
 .blog-titulopost {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
   text-decoration: none;
 }
 
 .blog-descricaopost {
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 /* Seção Como ajudar */
@@ -147,7 +169,7 @@ strong {
 
 .comoajudar-lista,
 .comoajudar-paragrafo {
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 .comoajudar-lista a,
@@ -164,17 +186,17 @@ strong {
 
 .rodape-titulo {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 .rodape-subtitulo {
-  font-size: 20px;
+  font-size: 2.0rem;
   font-weight: 500;
 }
 
 .rodape-seg-subtitulo {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .rodape-link {
