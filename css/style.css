@@ -16,6 +16,25 @@ body {
   line-height: 1.4;
 }
 
+.section { 
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.buttons {
+  width: auto;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 30px;
+  border-right: 4px solid #993c38;
+  border-bottom: 4px solid #993c38;
+  padding: 5px 0px;
+  text-align: center;
+}
+
 h1 {
   font-size: 3.5rem;
   font-weight: 600;
@@ -30,12 +49,6 @@ strong {
   font-weight: 600;
 }
 
-.botao {
-  font-size: 2.4rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
 .realce-semibold {
   font-weight: 600;
 }
@@ -43,14 +56,21 @@ strong {
 /* Cabeçalho */
 
 header {
+  width: 100%;
+  height: 70px;
   display: flex;
-  background-color: #40404034;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
   padding: 1.28rem 2.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.144);
 }
 
 .header__nav--list {
   display: flex;
   list-style: none;
+  gap: 2.4rem;
 }
 
 .header__nav--item-list a {
@@ -65,18 +85,31 @@ header {
   color: #f60;
 }
 
-.header__nav--item-list.sub {
-  overflow: hidden;
-}
-
 .header__nav--item-list.item-list--children::after {
   content: "\2BC6";
 }
 
 /* Seção Hero */
+.section.section-hero {
+  padding: 130px 0px 100px;
+  background-image: url(../images/background_hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container-hero {
+  max-width: 500px;
+}
 
 .hero-paragrafo {
   font-size: 1.9rem;
+}
+
+.container__buttons-hero {
+  display: flex;
+  flex-direction: column;  
+  justify-content: start;
 }
 
 /* Seção Conteúdos Gratuitos */
