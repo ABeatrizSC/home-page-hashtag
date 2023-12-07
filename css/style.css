@@ -1,4 +1,6 @@
 /* Global */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -17,32 +19,51 @@ body {
 }
 
 .section { 
-  max-width: 1400px;
-  display: flex;
-  justify-content: center;
-  padding: 60px 0;
+  padding: 9.54rem 2rem;
+}
+
+.container {
+  max-width: 100rem;
 }
 
 .buttons {
-  width: auto;
+  width: fit-content;
   font-size: 2.4rem;
   font-weight: 700;
   text-decoration: none;
   border-radius: 30px;
   border-right: 4px solid #993c38;
   border-bottom: 4px solid #993c38;
-  padding: 5px 0px;
+  padding: 0.4rem 4.5rem;
   text-align: center;
+  color: white;
+}
+
+.buttons:hover {
+  color: #993c38;
+  background-image: none; 
+  background-color: white;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
 }
 
 h1 {
   font-size: 3.5rem;
   font-weight: 600;
+  line-height: 4.2rem;
 }
 
 h2 {
   font-size: 3.5rem;
   font-weight: 400;
+}
+
+p {
+  color: #404040;
+  font-size: 1.9rem;
+  line-height: 2.3rem;
+  text-align: justify;
 }
 
 strong {
@@ -57,13 +78,13 @@ strong {
 
 header {
   width: 100%;
-  height: 70px;
+  height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   background-color: white;
-  padding: 1.28rem 2.5rem;
+  padding: 1.5rem 2vw;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.144);
 }
 
@@ -76,9 +97,9 @@ header {
 .header__nav--item-list a {
   color: #112e61;
   font-size: 1.4rem;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 600;
 }
 
 .header__nav--item-list a:hover {
@@ -91,15 +112,22 @@ header {
 
 /* Seção Hero */
 .section.section-hero {
-  padding: 130px 0px 100px;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding-top: 130px;
+  padding-bottom: 100px;
   background-image: url(../images/background_hero.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50%;
   background-size: cover;
 }
 
 .container-hero {
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .hero-paragrafo {
@@ -110,6 +138,18 @@ header {
   display: flex;
   flex-direction: column;  
   justify-content: start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hero-button {
+  background-image: linear-gradient(180deg, #ff645e, #ff9253);
+}
+
+.iframe-video {
+  width: 42rem;
+  border-radius: 2.5rem;
+  aspect-ratio: 16/9;
 }
 
 /* Seção Conteúdos Gratuitos */
