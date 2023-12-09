@@ -26,8 +26,6 @@ body {
 
 .container {
   max-width: 100rem;
-  display: flex;
-  justify-content: center;
 }
 
 .buttons {
@@ -95,7 +93,8 @@ header {
   background-color: white;
   padding: 1.5rem 2vw;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.144);
-}
+  z-index: 999;
+}  
 
 .header__nav--list {
   display: flex;
@@ -118,7 +117,7 @@ header {
 }
 
 /* Seção Hero */
-.section.section-hero {
+.section.section__hero {
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -163,13 +162,13 @@ header {
   background-image: url(../images/background_conteudosGratuitos.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 49%;
+  background-position: 50%;
 }
 
 .img-conteudos {
   width: 44rem;
   height: 22rem;
-  margin: auto;
+  margin: 17% auto 0;
 }
 
 .container__conteudo-titulo {
@@ -182,6 +181,16 @@ header {
   width: 30px;
 }
 
+.gratuito-h2 {
+  font-size: 35px;
+  line-height: 42px;
+}
+
+.gratuito-h2-highlight {
+  color: #7a40be;
+  font-weight: 600;
+}
+
 .conteudo-icons {
   width: 50px;
   border-radius: 100%;
@@ -190,11 +199,6 @@ header {
   overflow: visible;
   background-color: #e7e7e7;
   box-shadow: inset 0 0 3px 2px rgba(0,0,0,.1)
-}
-
-.gratuito-h2 {
-  font-size: 35px;
-  line-height: 42px;
 }
 
 .gratuito-h3 {
@@ -209,22 +213,18 @@ header {
   box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
-.gratuito-highlight {
-  color: #7a40be;
-  font-weight: 600;
-}
 
 .container__listas-conteudo {
   display: flex;
   justify-content: center;
   gap: 1.7rem;
+  margin-top: 40px;
 }
 
 .container__listas-conteudo--lista {
   width: 50%;
   height: fit-content;
-  margin-top: 40px;
-  padding: 0px 10px 15px;
+  padding: 0px 1rem 3rem;
   border-radius: 25px;
   box-shadow: inset 0 0 6px 2px rgba(0,0,0,.2);
   display: flex;
@@ -233,7 +233,9 @@ header {
 }
 
 .container__listas-conteudo--lista > ul {
+  width: 100%;
   margin-top: 1rem;
+  padding: 0 3rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -245,10 +247,12 @@ header {
 }
 
 .gratuito-link-lista > li {
-  padding: 0.3rem 5rem;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 1rem;
+  padding: 0.3rem 3rem;
   border-radius: 5rem;
   background-color: #e7e7e7;
   box-shadow: inset 0 0 3px 2px rgba(0,0,0,.1);
@@ -259,20 +263,65 @@ header {
   height: 20px;
 }
 
-
 /* Seção Diferenciais */
+.section__diferenciais {
+  background-color: #f4f5f7;
+}
 
-/* .diferenciais-h2 {
+.container__diferenciais {
+  background-color: white;
+  border-radius: 5rem;
+  box-shadow: inset 0 0 0.8rem 0.3rem rgba(0,0,0,.15)
+}
+
+.container__diferenciais--titulo {
+  background-image: linear-gradient(225deg, #196b9f, #1a82a7);
+  padding: 4.88rem;
+  border-radius: 4rem 4rem 0 0;
+  display: flex;
+}
+
+.div__diferenciais--h2 {
+  border-left: solid 0.5rem #ffb20f;
+  padding: 0.52rem 0.52rem 2rem;
+}
+
+.diferenciais-h2 {
+  color: white;
   font-size: 3.5rem;
-  font-weight: 400;
-} */
-
-/* .diferenciais-h2 strong {
-  font-weight: 600;
-} */
+  line-height: 4.2rem;
+  padding-left: 2rem;
+}
 
 .diferenciais-p {
   font-size: 1.9rem;
+  color: white;
+  text-align: right;
+}
+
+.container__diferenciais--conteudo {
+  padding: 4.88rem;
+}
+
+.div__diferencial-item {
+  border-radius: 2.5rem;
+  background-color: white;
+  box-shadow: 0 0 0.8rem 0.3rem rgba(0,0,0,0.15);
+  padding: 3.12rem 2.5rem;
+}
+
+.div__diferencial-item--icon {
+  background-color: #ffaf00;
+  display: inline-block;
+  border-radius: 1.5rem;
+  width: 10rem;
+  height: 10rem;
+  padding: 1.6rem;
+  box-shadow: 0 0 0.8rem 0.2rem rgba(0,0,0,0.1);
+}
+
+.div__diferencial-item--icon img {
+  width: 100%;
 }
 
 .diferenciais-h3 {
