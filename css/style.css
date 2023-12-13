@@ -18,6 +18,7 @@ body {
   color: #404040;
   font-size: 1.6rem;
   line-height: 1.4;
+  background-color: #f4f5f7;
 }
 
 .section { 
@@ -34,9 +35,10 @@ body {
   font-size: 2.4rem;
   font-weight: 700;
   border-radius: 30px;
+  border: 0;
   border-right: 4px solid #993c38;
   border-bottom: 4px solid #993c38;
-  padding: 0.4rem 4.5rem;
+  padding: 0.4rem 4rem;
   text-align: center;
   color: white;
 }
@@ -81,7 +83,7 @@ h3 {
   box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
-p {
+p, li {
   color: #404040;
   font-size: 1.8rem;
   line-height: 1.4;
@@ -118,7 +120,7 @@ header {
 
 .header__nav--item-list a {
   color: #112e61;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -267,10 +269,6 @@ header {
 }
 
 /* Seção Diferenciais */
-.section__diferenciais {
-  background-color: #f4f5f7;
-}
-
 .container__diferenciais {
   background-color: white;
   border-radius: 5rem;
@@ -460,10 +458,6 @@ header {
   align-items: center;
 }
 /* Seção Blog */
-.section__blog {
-  background-color: #f4f5f7;
-}
-
 .container__blog {
   background-color: #f9f9f9;
   box-shadow: inset 0 0 13px 2px rgba(0,0,0,.2);
@@ -487,6 +481,7 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 2rem;
+  background-color: #fff;
 }
 
 .blog-item {
@@ -539,17 +534,24 @@ header {
 }
 
 .titulo-inclinado.comoajudar-h2 {
+  font-size: 3rem;
   position: static;
   transform: translate(0, 0);
   background-image: linear-gradient(90deg,#14a1d5,#1a8ad4);
 }
 
 .div__comoajudar-lista {
-  max-width: 70rem;
+  max-width: 80rem;
   background-color: #f9f9f9;
   padding: 3rem 2.7rem;
   border-radius: 2rem;
   box-shadow: inset 0 0 0.4rem 0.15rem rgba(0,0,0,.2);
+}
+
+.div__comoajudar-lista > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
 }
 
 .div__comoajudar-lista > ul > li::before {
@@ -557,14 +559,92 @@ header {
   margin-right: 0.5rem;
 }
 
-.lista--como-ajudar a,
-.como-ajudar-paragrafo a {
+.div__comoajudar-lista > ul > li > a:link, .div__comoajudar-lista > ul > li > a:visited, .como-ajudar-paragrafo > a:link, .como-ajudar-paragrafo > a:visited {
   color: #008ff7;
   font-weight: 600;
+  text-decoration: underline;
+}
+
+.div__comoajudar-lista > ul > li > a:hover, .div__comoajudar-lista > ul > li > a:active, .como-ajudar-paragrafo > a:hover, .como-ajudar-paragrafo > a:active {
+  color: #0056b3;
+}
+
+.section.sub-section_como-ajudar--respostas {
+  padding: 6rem 0;
+}
+
+.container__resposta-conteudo {
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 2rem;
 }
 
 .como-ajudar-paragrafo b {
   font-weight: 600;
+}
+
+/* Seção minicurso */
+.section__minicurso {
+  background-image: linear-gradient(90deg, #9e4ad7, #753db6);
+  color: white;
+}
+
+.container__minicurso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.minicurso-h2 {
+  font-size: 3.6rem;
+}
+
+.minicurso-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.minicurso-form--label-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.minicurso-input {
+  width: 80%;
+  height: 4rem;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: white;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 5px 1px rgba(0,0,0,.3);
+  padding: 1.02rem;
+}
+
+.minicurso-input:focus{
+  outline: none;
+}
+
+.buttons.minicurso-button {
+  font-size: 3rem;
+  padding: 1rem 4rem;
+  background-color: #ffba29;
+  border-bottom-color: #664a10;
+  border-right-color: #664a10;
+  cursor: pointer;
+}
+
+.buttons.minicurso-button:hover {
+  color: white;
+  border-bottom-color: #ffba29;
+  border-right-color: #ffba29;
 }
 
 /* Rodapé */

@@ -543,7 +543,7 @@
         </div>
       </div>
 
-      <div class="sub-section_como-ajudar--respostas">
+      <div class="section sub-section_como-ajudar--respostas">
         <div class="container__resposta-conteudo">
           <p class="como-ajudar-paragrafo">
             Se você respondeu <b>“sim”</b> para pelo menos uma dessas perguntas,
@@ -571,7 +571,7 @@
   
           <p class="como-ajudar-paragrafo">
             Você pode conferir todos os detalhes dos
-            <a href="https://www.hashtagtreinamentos.com/todos-os-cursos">nossos programas</a>
+            <a class="bosta" href="https://www.hashtagtreinamentos.com/todos-os-cursos">nossos programas</a>
             online de Excel, VBA, PowerPoint, Power BI, Python e SQL.
           </p>
   
@@ -586,24 +586,26 @@
     </section>
 
     <!-- Seção Minicurso -->
-    <section class="section">
-      <h2>
-        Cadastre-se e receba um <span class="realce-semibold">minicurso de graça</span>!
-      </h2>
-
-      <form action="">
-        <div>
-          <label for="name">Nome</label>
-          <input type="text" id="name" name="name" placeholder="*Seu primeiro nome" required>
-        </div>
-
-        <div>
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="*Seu melhor email" required>
-        </div>
-
-        <button type="submit">Enviar</button>
-      </form>
+    <section class="section section__minicurso flex-center">
+      <div class="container container__minicurso">
+        <h2 class="minicurso-h2">
+          Cadastre-se e receba um <span class="realce-semibold">minicurso de graça</span>!
+        </h2>
+  
+        <form class="minicurso-form" action="">
+          <div class="minicurso-form--label-input">
+            <label for="name">Nome</label>
+            <input class="minicurso-input" type="text" id="name" name="name" placeholder="*Seu primeiro nome" required>
+          </div>
+  
+          <div class="minicurso-form--label-input">
+            <label for="email">E-mail</label>
+            <input class="minicurso-input" type="email" id="email" name="email" placeholder="*Seu melhor email" required>
+          </div>
+  
+          <button class="buttons minicurso-button" type="submit">Enviar</button>
+        </form>
+      </div>
     </section>
   </main>
 
