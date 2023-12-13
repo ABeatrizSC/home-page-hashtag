@@ -32,23 +32,19 @@ body {
 
 .buttons {
   width: fit-content;
+  color: white;
   font-size: 2.4rem;
   font-weight: 700;
-  border-radius: 30px;
+  text-align: center;
   border: 0;
   border-right: 4px solid #993c38;
   border-bottom: 4px solid #993c38;
+  border-radius: 30px;
   padding: 0.4rem 4rem;
-  text-align: center;
-  color: white;
 }
 
 .buttons:hover {
-  color: #993c38;
-  background-image: none; 
-  background-color: white;
-  border-right: 4px solid white;
-  border-bottom: 4px solid white;
+  border: solid 0.2rem white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
 }
 
@@ -98,8 +94,29 @@ strong {
   font-weight: 600;
 }
 
-/* Cabeçalho */
+.div__form-label-input {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
 
+.form-input {
+  height: 4rem;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: white;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 5px 1px rgba(0,0,0,.3);
+  padding: 1.02rem;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+/* Cabeçalho */
 header {
   width: 100%;
   height: 70px;
@@ -160,8 +177,15 @@ header {
   margin-top: 2rem;
 }
 
-.hero-button {
+.buttons.hero-button {
   background-image: linear-gradient(180deg, #ff645e, #ff9253);
+}
+
+.buttons.hero-button:hover {
+  color: #993c38;
+  background-color: white;
+  background-image: none; 
+  border-color: white;
 }
 
 .iframe-video {
@@ -178,7 +202,7 @@ header {
   background-position: 50%;
 }
 
-.img-conteudos {
+.conteudos-img {
   width: 44rem;
   height: 22rem;
   margin: 17% auto 0;
@@ -190,21 +214,21 @@ header {
   gap: 1.7rem;
 }
 
-.conteudo-seta {
+.conteudos-seta {
   width: 30px;
 }
 
-.gratuito-h2 {
+.conteudos-h2 {
   font-size: 35px;
   line-height: 42px;
 }
 
-.gratuito-h2-highlight {
+.conteudos-h2-highlight {
   color: #7a40be;
   font-weight: 600;
 }
 
-.conteudo-icons {
+.conteudos-icons {
   width: 50px;
   border-radius: 100%;
   padding: 1rem;
@@ -214,7 +238,7 @@ header {
   box-shadow: inset 0 0 3px 2px rgba(0,0,0,.1)
 }
 
-.titulo-inclinado.gratuito-h3 {
+.titulo-inclinado.conteudos-h3 {
   font-weight: 700;
   background-image: linear-gradient(90deg, #aa56e6, #6d42b9);
 }
@@ -246,12 +270,12 @@ header {
   gap: 1rem;
 }
 
-.gratuito-link-lista {
+.conteudos-link-lista{
   color: black;
   font-size: 1.9rem;
 }
 
-.gratuito-link-lista > li {
+.conteudos-link-lista > li {
   width: 100%;
   display: flex;
   align-items: center;
@@ -357,7 +381,6 @@ header {
   opacity: 60%;
 }
 
-
 /* Seção Depoimentos*/
 .section__depoimentos {
   background-image: url(../images/background_depoimentos.png);  
@@ -423,11 +446,14 @@ header {
   background-color: #14577f;
 }
 
-.depoimento-button {
+.buttons.depoimento-button {
   background-image: linear-gradient(180deg, #196c9f, #1a80a7);
   border-bottom-color: #14577f;
   border-right-color: #14577f;
-  
+}
+
+.buttons.depoimento-button:hover {
+  border-color: #196c9f;
 }
 
 /* Seção Na Midia */
@@ -457,6 +483,7 @@ header {
   gap: 2rem;
   align-items: center;
 }
+
 /* Seção Blog */
 .container__blog {
   background-color: #f9f9f9;
@@ -609,29 +636,6 @@ header {
   align-items: center;
 }
 
-.minicurso-form--label-input {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-
-.minicurso-input {
-  width: 80%;
-  height: 4rem;
-  font-family: inherit;
-  font-size: inherit;
-  background-color: white;
-  border: 0;
-  border-radius: 1rem;
-  box-shadow: inset 0 0 5px 1px rgba(0,0,0,.3);
-  padding: 1.02rem;
-}
-
-.minicurso-input:focus{
-  outline: none;
-}
-
 .buttons.minicurso-button {
   font-size: 3rem;
   padding: 1rem 4rem;
@@ -643,27 +647,88 @@ header {
 
 .buttons.minicurso-button:hover {
   color: white;
-  border-bottom-color: #ffba29;
-  border-right-color: #ffba29;
+  border-color: #ffba29;
 }
 
 /* Rodapé */
+.footer-logo {
+  width: 18rem;
+}
 
-.rodape-titulo {
+.rodape-titulo, .rodape-subtitulo, .rodape-seg-subtitulo {
   font-weight: 600;
-  font-size: 2.2rem;
 }
 
 .rodape-subtitulo {
-  font-size: 2.0rem;
-  font-weight: 500;
-}
-
-.rodape-seg-subtitulo {
-  font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.92rem;
+  line-height: 1.3;
 }
 
 .rodape-link {
   color: #1a77a4;
 }
+
+.rodape-link--redessociais {
+  color: transparent !important;
+}
+
+.footer svg {
+  width: 2.5rem;
+}
+
+.footer svg:hover {
+  fill: #f60;
+  stroke: #f60;
+}
+
+.footer a {
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #f60;
+}
+
+.footer-form {
+  max-width: 40%; /* alterar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: inset 0 0 10px 2px rgba(0,0,0,.15);
+  padding: 2.5rem;
+}
+
+.buttons.footer-form-button {
+  padding: 1rem 3rem;
+  cursor: pointer;
+  background-color: #1a77a4;
+  border-right-color: #0c374d;
+  border-bottom-color: #0c374d;
+}
+
+.footer-form-button:hover {
+  background-color: #1a77a4;
+  color: white;
+  border: solid 0.2rem #1a77a4;
+}
+
+/* fixado */
+.logo-whatsapp {
+  width: 8.5rem;
+  position: fixed;
+  bottom: 0.8rem;
+  right: 1rem;
+}
+
+.logo-whatsapp:hover {
+  transform: translate(0.5rem, 0.5rem);
+  transition: 400ms;
+}
+
+.logo-whatsapp > img {
+  width: 100%; /* largura máxima do container acima */
+}
+
