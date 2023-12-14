@@ -718,26 +718,31 @@ header {
 }
 
 .container__minicurso {
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 .minicurso-h2 {
-  font-size: 3.6rem;
+  font-size: 3.3rem;
 }
 
 .minicurso-form {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-self: stretch;
+  align-items: end;
+}
+
+.minicurso-form #email {
+  width: 35rem;
 }
 
 .buttons.minicurso-button {
   font-size: 3rem;
-  padding: 1rem 4rem;
+  padding: 0.8rem 3rem;
   background-color: #ffba29;
   border-bottom-color: #664a10;
   border-right-color: #664a10;
@@ -749,8 +754,40 @@ header {
 }
 
 /* Rodapé */
+.container__footer {
+  width: 106rem;
+  display: flex;
+  align-items: start;
+  gap: 4.88rem;
+}
+
 .footer-logo {
   width: 18rem;
+}
+
+.div__sub-section-rodape--informacoes,
+.div__sub-section-rodape-item,
+.div__sub-section-rodape-item-assistente, 
+.div__icon-link,
+.div__sub-section-rodape-coluna {
+  display: flex;
+  flex-flow: column;
+}
+
+.div__sub-section-rodape-coluna {
+  gap: 3.12rem;
+}
+
+.div__sub-section-rodape--informacoes {
+  gap: 1.6rem;
+}
+
+.div__sub-section-rodape-item {
+  gap: 1.28rem;
+}
+
+.div__sub-section-rodape-item-assistente {
+  gap: 1.02rem;
 }
 
 .rodape-titulo, .rodape-subtitulo, .rodape-seg-subtitulo {
@@ -762,12 +799,33 @@ header {
   line-height: 1.3;
 }
 
+.div__icon-link {
+  gap: 0.65rem;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.div__redes-sociais {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
 .rodape-link {
   color: #1a77a4;
 }
 
 .rodape-link--redessociais {
   color: transparent !important;
+}
+
+.rodape-link--redessociais svg{
+  fill: #404040;
+  stroke: #404040;
 }
 
 .footer svg {
@@ -785,6 +843,10 @@ header {
 
 .footer a:hover {
   color: #f60;
+}
+
+.footer-copyright {
+  text-align: center;
 }
 
 .footer-form {
