@@ -21,8 +21,7 @@ body {
   background-color: #f4f5f7;
 }
 
-.section { 
-  width: 100%;
+.section {
   padding: 9.54rem 2rem;
 }
 
@@ -41,6 +40,7 @@ body {
   border-bottom: 4px solid #993c38;
   border-radius: 30px;
   padding: 0.4rem 4rem;
+  cursor: pointer;
 }
 
 .buttons:hover {
@@ -123,6 +123,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3.12rem;
   position: fixed;
   background-color: white;
   padding: 1.5rem 2vw;
@@ -132,7 +133,8 @@ header {
 
 .header__nav--list {
   display: flex;
-  gap: 2.4rem;
+  align-items: center;
+  gap: 2.5rem;
 }
 
 .header__nav--item-list a {
@@ -146,14 +148,47 @@ header {
   color: #f60;
 }
 
-.header__nav--item-list.item-list--children::after {
+.header__nav--item-list.item-list--arrow::after {
   content: "\2BC6";
 }
+
+.header__nav--item-list.item-list--arrow {
+  position: relative;
+}
+
+.header__nav--item-list-children {
+  display: none;
+  width: max-content;
+  flex-direction: column;
+  align-items: start;
+  gap: 0;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15);
+  padding: 0.41rem 0;
+}
+
+.header__nav--item-list-children > li {
+  width: 100%;
+  padding: 0.41rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+} 
+
+.header__nav--item-list-children > li:last-child {
+  border-bottom: none;
+} 
+
+.header__nav--item-list.item-list--arrow:hover .header__nav--item-list-children {
+  display: flex;
+}  
 
 /* Seção Hero */
 .section.section__hero {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5rem;
   padding-top: 130px;
   padding-bottom: 100px;
@@ -165,20 +200,27 @@ header {
 
 .container-hero {
   max-width: 500px;
+  display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.2rem;
+}
+
+.hero-paragrafo {
+  font-size: 1.9rem;
+  line-height: 1.3;
 }
 
 .container__buttons-hero {
   display: flex;
   flex-direction: column;  
   justify-content: start;
-  gap: 2rem;
+  gap: 1.6rem;
   margin-top: 2rem;
 }
 
 .buttons.hero-button {
   background-image: linear-gradient(180deg, #ff645e, #ff9253);
+  width: 100%;
 }
 
 .buttons.hero-button:hover {
@@ -294,19 +336,21 @@ header {
 
 /* Seção Diferenciais */
 .container__diferenciais {
-  background-color: white;
+  background-color: #f9f9f9;
   border-radius: 5rem;
   box-shadow: inset 0 0 0.8rem 0.3rem rgba(0,0,0,.15)
 }
 
 .container__diferenciais--titulo {
-  background-image: linear-gradient(225deg, #196b9f, #1a82a7);
-  padding: 4.88rem;
-  border-radius: 4rem 4rem 0 0;
   display: flex;
+  gap: 1.88rem;
+  background-image: linear-gradient(225deg, #196b9f, #1a82a7);
+  padding: 4.88rem 4.88rem 8.88rem;
+  border-radius: 4rem 4rem 0 0;
 }
 
 .div__diferenciais--h2 {
+  flex: 1;
   border-left: solid 0.5rem #ffb20f;
   padding: 0.52rem 0.52rem 2rem;
 }
@@ -319,38 +363,60 @@ header {
 }
 
 .diferenciais-p {
+  flex: 1;
   font-size: 1.9rem;
   color: white;
   text-align: right;
+  padding-top: 0.52rem;
 }
 
 .container__diferenciais--conteudo {
-  padding: 4.88rem;
+  padding: 4.88rem 3.12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.88rem;
 }
 
-.div__diferencial-item {
+.div__diferenciais-colunas {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: -110px;
+}
+
+.div__diferenciais-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.28rem;
+  align-items: center;
+  flex: 1;
+  text-align: center;
   position: relative;
-  border-radius: 2.5rem;
+  border-radius: 2rem;
   background-color: white;
   box-shadow: 0 0 0.8rem 0.3rem rgba(0,0,0,0.15);
-  padding: 3.12rem 2.5rem;
+  padding: 7.12rem 2.5rem 3.12rem;
 }
 
-.div__diferencial-item--icon {
+.div__diferenciais-item p {
+  text-align: center;
+}
+
+.div__diferenciais-item--icon {
   display: inline-block;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #ffaf00;
-  border-radius: 1.5rem;
+  border-radius: 1.9rem;
   width: 10rem;
   height: 10rem;
   padding: 1.6rem;
   box-shadow: 0 0 0.8rem 0.2rem rgba(0,0,0,0.1);
 }
 
-.div__diferencial-item--icon img {
+.div__diferenciais-item--icon img {
   width: 100%;
 }
 
@@ -359,8 +425,16 @@ header {
   font-weight: 600;
 }
 
+.div__diferenciais-empresas {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 3.12rem;
+}
+
 .diferenciais-h3-empresas {
   font-weight: 400;
+  font-size: 3.2rem;
 }
 
 .diferenciais-h3-empresas a {
@@ -368,13 +442,22 @@ header {
   font-weight: 700;
 }
 
+.div__logo-empresas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0 15%;
+}
+
 .div__logo-empresas > img {
-  height: 5rem;
+  height: 3rem;
   filter: grayscale(100%);
 }
 
 .logo-loreal {
   opacity: 60%;
+  height: 90rem;
 }
 
 .logo-subsea, .logo-disney {
@@ -389,16 +472,36 @@ header {
   background-position: 50%;
 }
 
+.container__depoimentos {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 2.7rem;
+}
+
 .container__depoimentos--title {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.7rem;
 }
 
 .container__depoimentos--title > h2 {
   color: white;
+}
+
+
+.container__depoimentos--carrossel{
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  gap: 2.7rem;
+}
+
+.div__carrossel-imagens {
+  display: flex;
+  gap: 2rem;
 }
 
 .imagem-depoimento {
@@ -406,10 +509,6 @@ header {
   width: 30rem;
   object-fit: cover;
   border-radius: 2.5rem;
-}
-
-.container__depoimentos--carrossel{
-  position: relative;
 }
 
 .carrossel-seta {
@@ -642,7 +741,6 @@ header {
   background-color: #ffba29;
   border-bottom-color: #664a10;
   border-right-color: #664a10;
-  cursor: pointer;
 }
 
 .buttons.minicurso-button:hover {
@@ -703,7 +801,6 @@ header {
 
 .buttons.footer-form-button {
   padding: 1rem 3rem;
-  cursor: pointer;
   background-color: #1a77a4;
   border-right-color: #0c374d;
   border-bottom-color: #0c374d;
