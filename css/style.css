@@ -9,16 +9,24 @@
   text-decoration: none;
 }
 
+:root {
+  --body-background: #f4f5f7;
+  --vermelho-escuro: #993c38;
+  --hover-links-laranja: #f60;
+  --cinza-claro: #404040;
+  --div-background: #f9f9f9; /* container diferenciais/blog, blog item, lista como ajudar  */
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: #404040;
+  color: var(--cinza-claro);
   font-size: 1.6rem;
   line-height: 1.4;
-  background-color: #f4f5f7;
+  background-color: var(--body-background);
 }
 
 .section {
@@ -36,8 +44,8 @@ body {
   font-weight: 700;
   text-align: center;
   border: 0;
-  border-right: 4px solid #993c38;
-  border-bottom: 4px solid #993c38;
+  border-right: 4px solid var(--vermelho-escuro);
+  border-bottom: 4px solid var(--vermelho-escuro);
   border-radius: 30px;
   padding: 0.4rem 4rem;
   cursor: pointer;
@@ -80,7 +88,7 @@ h3 {
 }
 
 p, li {
-  color: #404040;
+  color: var(--cinza-claro);
   font-size: 1.8rem;
   line-height: 1.4;
   text-align: justify;
@@ -145,7 +153,7 @@ header {
 
     &:hover,
     &:active {
-      color: #f60;
+      color: var(--hover-links-laranja);
     }
   }
 }
@@ -228,7 +236,7 @@ header {
 }
 
 .buttons.hero-button:hover {
-  color: #993c38;
+  color: var(--vermelho-escuro);
   background-color: white;
   background-image: none; 
   border-color: white;
@@ -345,7 +353,7 @@ header {
 
 /* Seção Diferenciais */
 .container__diferenciais {
-  background-color: #f9f9f9;
+  background-color: var(--div-background);
   border-radius: 5rem;
   box-shadow: inset 0 0 0.8rem 0.3rem rgba(0,0,0,.15)
 }
@@ -593,7 +601,7 @@ header {
 
 /* Seção Blog */
 .container__blog {
-  background-color: #f9f9f9;
+  background-color: var(--div-background);
   box-shadow: inset 0 0 13px 2px rgba(0,0,0,.2);
   border-radius: 4rem;
   padding: 4.88rem;
@@ -624,7 +632,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: #f9f9f9;
+  background-color: var(--div-background);
   box-shadow: inset 0 0 0.4rem 0.15rem rgba(0,0,0,.2);
   border-radius: 2.5rem;
   padding: 3rem;
@@ -647,7 +655,7 @@ header {
 }
 
 .blog-titulopost {
-  color: #404040;
+  color: var(--cinza-claro);
   font-size: 2.3rem;
   line-height: 1.2;
   font-weight: 600;
@@ -678,7 +686,7 @@ header {
 
 .div__comoajudar-lista {
   max-width: 80rem;
-  background-color: #f9f9f9;
+  background-color: var(--div-background);
   padding: 3rem 2.7rem;
   border-radius: 2rem;
   box-shadow: inset 0 0 0.4rem 0.15rem rgba(0,0,0,.2);
@@ -827,15 +835,15 @@ header {
 }
 
 .rodape-link {
-  color: #1a77a4;
+  color: ##1a77a4;
 }
 
 .rodape-link--redessociais {
   color: transparent !important;
 
   & svg {
-    fill: #404040;
-    stroke: #404040;
+    fill: var(--cinza-claro);
+    stroke: var(--cinza-claro);
   }
 }
 
@@ -845,7 +853,7 @@ header {
     transition: fill ease-in 300ms;
 
     &:hover {
-      fill: #f60;
+      fill: var(--hover-links-laranja);
     }
   }
 
@@ -854,7 +862,7 @@ header {
     transition: color ease-in 300ms;
 
     &:hover {
-      color: #f60;
+      color: var(--hover-links-laranja);
     }
   }
 }
@@ -864,7 +872,6 @@ header {
 }
 
 .footer-form {
-  max-width: 40%; /* alterar */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -882,8 +889,6 @@ header {
   border-bottom-color: #0c374d;
 
   &:hover {
-    background-color: #1a77a4;
-    color: white;
     border: solid 0.2rem #1a77a4;
   }
 }
