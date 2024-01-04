@@ -1,9 +1,17 @@
 @media screen and (max-width: 1027px) {
+
     header {
         & .header__nav {
-            display: none;
+            & .header__nav--list {
+                gap: 1.6rem;
+
+                & a {
+                    font-size: 1.1rem;
+                }
+            }
         }
     }
+
     
     .section__conteudos-gratuitos {     
         & .container__conteudos { 

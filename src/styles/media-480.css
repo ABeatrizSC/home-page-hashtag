@@ -1,8 +1,9 @@
 @media screen and (max-width: 480px) {
+    
     h1  {
         font-size: 2.8rem;
         line-height: 4rem;
-        text-align: center;
+        text-align: justify;
     }
 
     .buttons {
@@ -86,13 +87,29 @@
 
     }
 
+    .section__depoimentos {
+        & .container__depoimentos {
+          & .container__depoimentos--title {
+            & h2 {
+              font-size: 2.8rem;
+              text-align: center;
+            }
+          }
+        }
+    }
+
     .section__na-midia {
         & .container__na-midia--conteudo {
             flex-flow: column;
             align-items: center;
 
             & .div__na-midia--title {
-                min-width: fit-content;
+                justify-content: center;
+                
+                & .na-midia--h2 {
+                    width: 80%;
+                    text-align: center;
+                }
             }
             
             & .div__na-midia--logos {
@@ -141,9 +158,13 @@
 
     .section__minicurso {
         & .container__minicurso {
-          & .minicurso-form {
-            padding: 0;
-          }
+            & .minicurso-h2 {
+                font-size: 3.1rem;
+            }
+
+            & .minicurso-form {
+                padding: 0;
+            }
         }
     }
 
@@ -153,7 +174,7 @@
         .div__footer-informacoes--item-assistente, 
         .div__icon-link,
         .div__sub-section-footer-coluna {
-          align-items: center;
+            align-items: center;
         }
     }
 }

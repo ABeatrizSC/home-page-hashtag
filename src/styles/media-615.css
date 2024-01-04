@@ -88,6 +88,20 @@
         }
     }
 
+    .section__depoimentos {
+        & .container__depoimentos {
+          & .container__depoimentos--title {
+            width: 90%;
+            gap: 1rem;
+          
+            & h2 {
+              font-size: 3rem;
+              text-align: center;
+            }
+          }
+        }
+    }
+
     .section__blog {
         padding-left: 4rem;
         padding-right: 4rem;

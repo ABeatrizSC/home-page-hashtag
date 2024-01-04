@@ -1,0 +1,114 @@
+@media screen and (max-width: 937px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    body {
+        position: relative;
+    }
+    
+    header {
+        & img {
+            width: 11rem;
+        }
+
+        & .header__nav {
+            display: none;
+        }
+
+        & #closed-menu-icon {
+            display: block;
+            font-size: 3.3rem;
+            color: #112e61;
+            cursor: pointer;
+        }
+        
+
+        & .header__mobile-nav {
+            background-color: white;
+            width: 100vw;
+            height: 100vh;
+            padding: 2.5rem 3rem;
+            display: flex;
+            flex-flow: column;
+            position: absolute;
+            top: 0;
+            right: -100vw;
+            transition: all ease-in 300ms;
+
+            & #open-menu-icon {
+                color: #112e61;
+                align-self: flex-end;
+                font-size: 4.5rem;
+                cursor: pointer;
+            }
+
+            & .header__nav--list {
+                overflow-y: scroll;
+                height: 100vh;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2.3rem;
+              
+                &::-webkit-scrollbar {
+                    width: 0;
+                }
+
+                & a {
+                  color: #112e61;
+                  font-size: 2rem;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                  transition: color ease-in 300ms;
+              
+                  &:hover,
+                  &:active {
+                    color: var(--hover-links-laranja);
+                  }
+                }
+          
+                & .header__nav--item-list {
+                    &.item-list--arrow {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+
+                        &:hover .header__nav--item-list-children {
+                            display: flex;
+                        } 
+
+                        & a {
+                            & .arrow {
+                                padding-left: 1rem;
+                            }
+                        }
+                    }
+
+                    & .header__nav--item-list-children {
+                        width: max-content;
+                        padding-top: 2rem;
+                        display: none;
+                        flex-direction: column;
+                        gap: 1.5rem;
+                        position: static;
+                    
+                        & li {
+                            width: 100%;
+
+                            & a {
+                                font-size: 1.8rem;
+                            }
+                        } 
+                    }        
+                }
+            }
+        }
+
+        & .open {
+            right: 0;
+        }
+    }
+}

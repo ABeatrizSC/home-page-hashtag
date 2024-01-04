@@ -2,6 +2,7 @@
 
   h1 {
     text-align: justify;
+    font-size: 3.5rem;
   }
 
   h3 {
@@ -117,7 +118,35 @@
     & .container__depoimentos {
       & .container__depoimentos--carrossel{
         & .div__carrossel-imagens {
-          display: none;
+          justify-content: center;
+          & .imagem-depoimento {
+            display: none;
+          }
+
+          & .imagem-depoimento-mobile {
+            display: block;
+            aspect-ratio: 16/9;
+            width: 30rem;
+            object-fit: cover;
+            border-radius: 2.5rem;
+            filter: brightness(60%)
+          }
+
+          & .carrossel-seta {
+            position: absolute;
+            top: 40%;
+            cursor: pointer;
+          
+            &.carrossel-seta--esquerda {
+              left: 0;
+              transform: translateX(1rem);
+            }
+          
+            &.carrossel-seta--direita {
+              right: 0;
+              transform: translateX(1rem);
+            }
+          }
         }
       }
     }
@@ -251,6 +280,7 @@
   
       & .footer-form {
         width: 90%;
+        margin-top: -4rem;
 
         & label {
           font-size: 2rem;

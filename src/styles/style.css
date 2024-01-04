@@ -7,12 +7,16 @@ header {
   gap: 3.12rem;
   position: fixed;
   background-color: white;
-  padding: 1.5rem 2vw;
+  padding: 1.5rem 3rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.144);
   z-index: 999;
 
   & img {
     width: 8.5rem;
+  }
+  
+  & .header__mobile-nav , #closed-menu-icon {
+    display: none;
   }
 
   & .header__nav {
@@ -429,6 +433,11 @@ header {
           width: 30rem;
           object-fit: cover;
           border-radius: 2.5rem;
+          filter: brightness(60%)
+        }
+
+        & .imagem-depoimento-mobile {
+          display: none;
         }
     
         & .carrossel-seta {
@@ -772,6 +781,10 @@ header {
 
             & .footer-link {
               color: #1a77a4;
+
+              &:hover {
+                color: var(--hover-links-laranja);
+              }
             }
           }
         }
@@ -785,8 +798,13 @@ header {
             color: transparent !important;
           
             & svg {
+              width: 2.8rem;
               fill: var(--cinza-claro);
               stroke: var(--cinza-claro);
+
+              &:hover {
+                fill: var(--hover-links-laranja);
+              }
             }
           }
         }
