@@ -1,0 +1,38 @@
+@media screen and (max-width: 360px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    .buttons {
+        font-size: 2rem;
+    }
+
+    .section__hero {
+        & .container__hero {
+            & .container__buttons-hero {
+                & .buttons.hero-button {
+                    padding: 0.7rem 0;
+                }
+            }
+        }  
+    }
+
+    .section__depoimentos {
+        & .container__depoimentos {
+          & .container__depoimentos--title {
+            & h2 {
+              font-size: 2.7rem;
+            }
+          }
+        }
+    }
+
+    .section__minicurso {
+        & .container__minicurso {
+            & .minicurso-h2 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
