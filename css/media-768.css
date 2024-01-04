@@ -1,0 +1,269 @@
+@media screen and (max-width: 768px) {
+
+  h1 {
+    text-align: justify;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+    line-height: 1.5;
+  }
+
+  .div__form-label-input {
+    width: 80%;
+  }
+  
+
+  .form-input {
+    height: 5.5rem;
+  }
+
+  .section__hero {
+    flex-flow: column;
+    background-image: url(../images/background_hero-mobile.png);
+
+    & .container__hero {
+      display: flex;
+      flex-direction: column;
+      max-width: 80%;
+  
+      & .container__buttons-hero {
+        align-items: center;
+
+        & .buttons.hero-button {
+          width: 80%;
+        }
+      }
+    }
+    
+    & .iframe-video {
+      width: 46rem;
+    }
+  }
+
+  .section__conteudos-gratuitos {
+    background-color: white;
+    background-image: url(../images/background_conteudosGratuitos-mobile.png);
+    background-size: auto;
+    background-position-y: bottom;
+
+    & .container__conteudos {
+      flex-flow: column-reverse;
+      gap: 5rem;
+
+      & .container__conteudos.container-lista {
+        flex-flow: row;
+        padding: 0 10rem;
+      }
+
+      & .conteudos-img {
+        margin-top: 0;
+        max-width: 50vw;
+      }
+      
+      & .container__conteudos-titulo-lista {
+        & .container__conteudos--titulo {
+          padding: 0 10rem;
+
+          & .conteudos-h2 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .section__diferenciais {
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    & .container__diferenciais {
+      & .container__diferenciais--titulo {
+        flex-flow: column;
+        gap: 1.5rem;
+  
+        & .diferenciais-p {
+          text-align: left;
+          padding-top: 0;
+        }
+      }
+  
+      & .container__diferenciais--conteudo {
+        margin: 0 4rem;
+
+        & .div__diferenciais-colunas {
+          flex-flow: column;
+          gap: 8rem;
+          margin-top: -7rem;
+        }
+      }
+  
+      & .div__diferenciais-empresas { 
+        gap: 4rem;
+
+        & .diferenciais-empresas-h3 {
+          max-width: 50rem;
+          text-align: center;
+        }
+      
+        & .div__logo-empresas {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .section__depoimentos {
+    & .container__depoimentos {
+      & .container__depoimentos--carrossel{
+        & .div__carrossel-imagens {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .section__na-midia {
+    & .div__na-midia--title {
+      min-width: 70%;
+    }
+    
+    & .div__na-midia--logos {
+      max-width: 30%;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      & img {
+        width: 13rem;
+      }
+    }
+  }
+
+  .section__blog {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+    & .container__blog {
+      & .container__blog--conteudo {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr;
+        grid-gap: 3rem;
+        padding: 0;
+      }
+    }
+  }
+
+  .section__comoajudar {
+    & .sub-section_comoajudar--questoes {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    & .section.sub-section_como-ajudar--respostas {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+
+  .section__minicurso {
+    & .container__minicurso {
+      & .minicurso-h2 {
+        text-align: center;
+      }
+  
+      & .minicurso-form {
+        flex-flow: column;
+        align-items: center;
+        gap: 3rem;
+        padding: 0 3rem;
+
+        & label {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .footer {
+    & .div__footer-informacoes,
+    .div__footer-informacoes--item,
+    .div__footer-informacoes--item-assistente, 
+    .div__icon-link,
+    .div__sub-section-footer-coluna {
+      align-items: start;
+    }
+    
+  
+    & .container__footer {
+      flex-flow: column;
+      align-items: center;
+      max-width: 40rem;
+  
+      & .footer-logo {
+        width: 20rem;
+      }
+  
+      & .div__sub-section-footer-coluna {
+        & .div__footer-informacoes {
+          & .div__footer-informacoes--item {
+  
+            & .footer-subtitulo {
+              font-size: 2.3rem;
+              line-height: 1.3;
+            }
+
+            & .footer-seg-subtitulo {
+              font-size: 2rem;
+            }
+          }
+  
+          & .div__icon-link {
+            & .icon-link {
+              & .footer-link {
+                font-size: 2rem;
+              }
+            }
+          }
+          
+          .div__redes-sociais {          
+            & .footer-link--redessociais {
+              & svg {
+                width: 3.5rem;
+              }
+            }
+          }
+        }
+      }
+      
+      & .footer-copyright {
+        display: none;
+      }
+
+      & .footer-copyright--mobile {
+        display: flex;
+        flex-flow: column;
+        gap: 2rem;
+
+        & p {
+          text-align: center;
+        }
+      }
+  
+      & .footer-form {
+        width: 90%;
+
+        & label {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

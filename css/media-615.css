@@ -1,0 +1,117 @@
+@media screen and (max-width: 615px) {
+
+    .section__hero {
+        & .container__hero {
+            max-width: 50rem;
+      
+            & .container__buttons-hero {
+                & .buttons.hero-button {
+                    width: 100%;
+                }
+            }
+        }
+      
+        & .iframe-video {
+            width: 42rem;
+        }
+    }
+
+    .section__conteudos-gratuitos {    
+        & .container__conteudos {    
+            & .container__conteudos.container-lista {
+                padding: 0;
+                gap: 3rem;
+            }
+
+            & .container__conteudos-titulo-lista {
+                align-items: center;
+
+                & .container__conteudos--titulo {
+                    padding: 0;
+                    gap: 0;
+                    justify-content: center;
+                
+                    & .conteudos-h2 {
+                        font-size: 3rem;
+                        max-width: 50rem;
+                    }
+                }
+            }
+        }
+    }
+          
+    .section__diferenciais {
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        & .container__diferenciais {
+            & .container__diferenciais--titulo {
+                padding: 4.88rem 3.12rem 8.88rem;
+
+                & .div__diferenciais--h2 {
+                    border-left: 0;
+                    border-bottom: solid 0.3rem #ffb20f;
+                    padding: 0.52rem 0.52rem 2rem;
+
+                    & .diferenciais-h2 {
+                        font-size: 3.1rem;
+                        line-height: 3.8rem;
+                        padding-left: 0;
+                        text-align: center;
+                    }
+                }
+
+                & .diferenciais-p {
+                    text-align: center;
+                }
+            }
+
+            & .container__diferenciais--conteudo {
+                margin: 0;
+
+                & .div__diferenciais-colunas {
+                    flex-flow: column;
+                    gap: 8rem;
+                    margin-top: -7rem;
+
+                    & .div__diferenciais-item {
+                        margin-top: 0;   
+                    }    
+                }
+            }
+        
+            & .div__diferenciais-empresas { 
+                & .diferenciais-empresas-h3 {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    .section__blog {
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        & .container__blog {
+            & .container__blog--conteudo {
+                margin-top: 3rem;
+            }
+
+            & .titulo-inclinado.blog-h2 {
+                width: 50rem;
+                text-align: center;
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .section__comoajudar {
+        & .sub-section_comoajudar--questoes {  
+            & .container__questoes-conteudo {
+                & .titulo-inclinado.comoajudar-h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

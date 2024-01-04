@@ -1,0 +1,24 @@
+@media screen  and (max-width: 1095px) {
+
+    header {
+        & .header__nav {
+            & .header__nav--list {
+                & a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .section__depoimentos {
+        & .container__depoimentos {
+            & .container__depoimentos--carrossel{
+                & .div__carrossel-imagens {
+                    & .imagem-depoimento {
+                        width: 25rem;
+                    }
+                }
+            }
+        }    
+    }
+}

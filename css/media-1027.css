@@ -1,0 +1,29 @@
+@media screen and (max-width: 1027px) {
+    header {
+        & .header__nav {
+            display: none;
+        }
+    }
+    
+    .section__conteudos-gratuitos {     
+        & .container__conteudos { 
+            & .conteudos-img {
+                max-width: 40vw;
+            }  
+
+            & .container__conteudos--lista {   
+                & ul {
+                    padding: 0.5rem 2.5rem 0;
+                }
+            }
+        }
+    }
+
+    .section__minicurso {
+        & .container__minicurso {
+            & .minicurso-h2 {
+            font-size: 2.9rem;
+            }
+        }
+    }
+}

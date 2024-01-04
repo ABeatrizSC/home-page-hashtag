@@ -1,0 +1,159 @@
+@media screen and (max-width: 480px) {
+    h1  {
+        font-size: 2.8rem;
+        line-height: 4rem;
+        text-align: center;
+    }
+
+    .buttons {
+        font-size: 2.2rem;
+        padding: 1rem 2.3rem;
+    }
+
+    .div__form-label-input {
+        width: 100%;
+    }
+
+    label {
+        font-size: 2.2rem;
+    }
+
+    .section__hero {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        & .container__hero {
+            & .hero-paragrafo {
+                font-size: 2rem;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .section__conteudos-gratuitos {
+        & .container__conteudos {
+            & .conteudos-img {
+                max-width: 35rem;
+            }
+
+            & .container__conteudos.container-lista {
+                flex-flow: column;
+                gap: 5rem;
+
+                & .container__conteudos--lista {
+                    width: 35rem;
+                }
+            }
+
+            & .container__conteudos-titulo-lista {
+                & .container__conteudos--titulo {
+                    & .conteudos-h2 {
+                        font-size: 2.9rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .section__diferenciais {
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        & .container__diferenciais {
+            & .container__diferenciais--titulo {
+                & .div__diferenciais--h2 {
+                    & .diferenciais-h2 {
+                        font-size: 3rem;
+                    }
+                }
+            }
+
+            & .div__diferenciais-empresas {
+                & .diferenciais-empresas-h3 {
+                    font-size: 2.5rem;
+                }
+
+                & .div__logo-empresas {  
+                    flex-flow: row wrap;   
+                    gap: 2rem;
+                    padding: 0;   
+
+                    & img {
+                        height: 2.7rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .section__na-midia {
+        & .container__na-midia--conteudo {
+            flex-flow: column;
+            align-items: center;
+
+            & .div__na-midia--title {
+                min-width: fit-content;
+            }
+            
+            & .div__na-midia--logos {
+                max-width: fit-content; 
+
+            & img {
+                width: 10rem;
+            }
+        }
+      }
+    }
+
+    .section__blog {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+        & .container__blog {
+            padding: 3rem;
+
+            & .titulo-inclinado.blog-h2 {
+                font-size: 2.8rem;
+                width: 40rem;
+            }
+
+            & .container__blog--conteudo {
+                margin-top: 5em; 
+            }
+        }
+    }
+
+    .section__comoajudar {
+        & .sub-section_comoajudar--questoes {  
+            padding: 3rem;
+
+            & .container__questoes-conteudo {
+                & .titulo-inclinado.comoajudar-h2 {
+                    font-size: 2.8rem;
+                }
+            }
+        }
+
+        & .section.sub-section_como-ajudar--respostas {
+            padding: 4rem;
+        }
+    }
+
+    .section__minicurso {
+        & .container__minicurso {
+          & .minicurso-form {
+            padding: 0;
+          }
+        }
+    }
+
+    .footer {
+        & .div__footer-informacoes,
+        .div__footer-informacoes--item,
+        .div__footer-informacoes--item-assistente, 
+        .div__icon-link,
+        .div__sub-section-footer-coluna {
+          align-items: center;
+        }
+    }
+}

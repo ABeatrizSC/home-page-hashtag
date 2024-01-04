@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --body-background: #f4f5f7;
+  --vermelho-escuro: #993c38;
+  --hover-links-laranja: #f60;
+  --cinza-claro: #404040;
+  --div-background: #f9f9f9;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--cinza-claro);
+  font-size: 1.6rem;
+  line-height: 1.4;
+  background-color: var(--body-background);
+}
+
+.section {
+  padding: 7rem 2rem;
+}
+
+.container {
+  max-width: 100rem;
+  height: fit-content;
+}
+
+.buttons {
+  width: fit-content;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  border: 0;
+  border-right: 4px solid var(--vermelho-escuro);
+  border-bottom: 4px solid var(--vermelho-escuro);
+  border-radius: 30px;
+  padding: 0.4rem 4rem;
+  cursor: pointer;
+
+  &:hover {
+    border: solid 0.2rem white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 4.2rem;
+}
+
+h2 {
+  font-size: 2.76rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.3rem;
+  line-height: 1.2;
+}
+
+.titulo-inclinado {
+  color: white;
+  border-radius: 1rem;
+  padding: 0.7rem 1.6rem;
+  width: fit-content;
+  transform: rotate(-3deg) translateY(-10px);
+  box-shadow: 0 8px 15px 2px rgba(0,0,0,.2);
+}
+
+p, li {
+  color: var(--cinza-claro);
+  font-size: 1.8rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.realce-semibold {
+  font-weight: 600;
+}
+
+.div__form-label-input {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.form-input {
+  height: 4rem;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: white;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 5px 1px rgba(0,0,0,.3);
+  padding: 1.02rem;
+
+  &:focus {
+    outline: none;
+  }
+}
